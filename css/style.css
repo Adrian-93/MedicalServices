@@ -1,0 +1,375 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-size: 35px; }
+  @media screen and (max-width: 1280px) {
+    body {
+      font-size: 20px; } }
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 15px; } }
+
+p {
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin: 0; }
+  p.textBold {
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 90%; }
+    @media screen and (max-width: 1280px) {
+      p.textBold {
+        font-size: 90px; } }
+    @media screen and (max-width: 600px) {
+      p.textBold {
+        font-size: 70px; } }
+
+button {
+  color: white;
+  background-color: #7081ff;
+  font-size: 45px;
+  padding: 10px 30px;
+  margin: 30px 0;
+  border-radius: 50px;
+  border-style: none;
+  cursor: pointer; }
+  @media screen and (max-width: 1280px) {
+    button {
+      font-size: 30px;
+      margin: 20px 0; } }
+
+nav {
+  position: fixed;
+  right: 10px;
+  top: 35%;
+  z-index: 100; }
+  @media screen and (max-width: 960px) {
+    nav {
+      display: none; } }
+  nav div {
+    height: 60px;
+    width: 60px;
+    position: relative; }
+  nav a {
+    height: 36px;
+    width: 36px;
+    background-color: #7081ff;
+    margin-top: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    position: absolute; }
+    nav a:hover {
+      cursor: pointer;
+      animation-name: nav;
+      animation-duration: 0.7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+
+.firstSection {
+  display: flex;
+  width: 100%;
+  height: 100vh; }
+  @media screen and (max-height: 800px) {
+    .firstSection {
+      height: 900px; } }
+  @media screen and (max-width: 600px) {
+    .firstSection {
+      height: 600px;
+      padding-top: 100px; } }
+  .firstSection header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; }
+    .firstSection header div {
+      text-align: right;
+      font-weight: bold;
+      margin: 10px;
+      margin-left: 50px;
+      margin-right: 200px; }
+      @media screen and (max-width: 960px) {
+        .firstSection header div {
+          text-align: center;
+          margin-right: 0;
+          margin-left: 0; } }
+  .firstSection .ball {
+    left: -95px;
+    top: 600px; }
+    @media screen and (max-width: 1280px) {
+      .firstSection .ball {
+        left: -50px; } }
+    @media screen and (max-width: 960px) {
+      .firstSection .ball {
+        display: none; } }
+  .firstSection .healthy-life {
+    margin-right: 0; }
+    .firstSection .healthy-life div {
+      margin-top: 50px;
+      margin-right: 100px; }
+      @media screen and (max-width: 960px) {
+        .firstSection .healthy-life div {
+          display: inline-block;
+          margin-right: 0px; } }
+  .firstSection .imgContainer {
+    width: 450px;
+    overflow: hidden; }
+    @media screen and (max-width: 960px) {
+      .firstSection .imgContainer {
+        display: none; } }
+
+.secondSection {
+  height: 100vh;
+  background-image: url(../img/section2img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  @media screen and (max-height: 800px) {
+    .secondSection {
+      height: 900px; } }
+  .secondSection div {
+    background-color: white;
+    height: 240px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 150px; }
+    @media screen and (max-width: 960px) {
+      .secondSection div {
+        padding: 0px 50px; } }
+  .secondSection .space {
+    margin-top: 50px;
+    font-weight: normal;
+    max-width: 900px; }
+  .secondSection .ball {
+    right: 400px;
+    top: -120px; }
+    @media screen and (max-width: 1280px) {
+      .secondSection .ball {
+        top: -78px;
+        right: 200px; } }
+    @media screen and (max-width: 960px) {
+      .secondSection .ball {
+        right: 100px; } }
+
+.thirdSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (max-height: 800px) {
+    .thirdSection {
+      height: 900px; } }
+  .thirdSection .header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .thirdSection .img-background {
+    background-image: url(../img/section3img.png);
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center top; }
+  .thirdSection .footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media screen and (max-width: 600px) {
+      .thirdSection .footer {
+        padding: 0px 20px; } }
+  .thirdSection .open {
+    align-self: center;
+    font-weight: bold;
+    position: relative; }
+    .thirdSection .open .ball {
+      top: -172px; }
+      @media screen and (max-width: 1280px) {
+        .thirdSection .open .ball {
+          top: -138px; } }
+      @media screen and (max-width: 600px) {
+        .thirdSection .open .ball {
+          top: -138px; } }
+
+.fourthSection {
+  height: 100vh;
+  background-image: url(../img/section4img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  @media screen and (max-height: 800px) {
+    .fourthSection {
+      height: 900px; } }
+  .fourthSection div {
+    text-align: center; }
+  .fourthSection .text {
+    font-size: 70px;
+    line-height: 100%; }
+    @media screen and (max-width: 600px) {
+      .fourthSection .text {
+        font-size: 40px;
+        padding: 20px; } }
+  .fourthSection .healthy-life {
+    position: absolute;
+    top: 75px;
+    left: 75px; }
+    @media screen and (max-width: 600px) {
+      .fourthSection .healthy-life {
+        top: 30px;
+        left: 30px; } }
+
+.fifthSection {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  font-weight: bold;
+  background-image: url(../img/contactimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none; }
+  @media screen and (max-height: 800px) {
+    .fifthSection {
+      height: 900px; } }
+  .fifthSection .contactHeader {
+    text-align: center;
+    padding: 40px; }
+    @media screen and (max-width: 600px) {
+      .fifthSection .contactHeader {
+        text-align: left; } }
+  .fifthSection .close {
+    position: absolute;
+    left: 120%;
+    top: -110px;
+    font-size: 70px;
+    cursor: pointer; }
+    @media screen and (max-width: 600px) {
+      .fifthSection .close {
+        left: 100%;
+        top: -118px; } }
+  .fifthSection .contact {
+    display: flex;
+    justify-content: center; }
+    .fifthSection .contact .row-form {
+      padding-bottom: 10px; }
+    .fifthSection .contact .label {
+      margin-top: 6px;
+      width: 40%;
+      float: left; }
+      @media screen and (max-width: 960px) {
+        .fifthSection .contact .label {
+          padding-bottom: 5px; } }
+    .fifthSection .contact .row-form {
+      width: 100%; }
+    .fifthSection .contact .form-container {
+      position: relative; }
+    .fifthSection .contact .row-form {
+      width: 100%; }
+    .fifthSection .contact .form-container {
+      position: relative; }
+    .fifthSection .contact .areaLabel {
+      padding: 20px 0; }
+    .fifthSection .contact .input {
+      display: inline-block;
+      width: 60%; }
+      .fifthSection .contact .input input, .fifthSection .contact .input select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px; }
+    .fifthSection .contact textarea {
+      width: calc(100% - 20px);
+      height: 150px;
+      resize: none;
+      padding: 10px; }
+    .fifthSection .contact input[type=submit] {
+      color: white;
+      background-color: #7081ff;
+      font-size: 45px;
+      padding: 10px 30px;
+      margin: 30px 0;
+      border-radius: 50px;
+      border-style: none;
+      cursor: pointer; }
+
+.text-center {
+  text-align: center; }
+
+.margin-top20 {
+  margin-top: 20px; }
+
+.fontSize45 {
+  font-size: 45px; }
+
+.fontSize70 {
+  font-size: 70px; }
+  @media screen and (max-width: 1280px) {
+    .fontSize70 {
+      font-size: 40px; } }
+  @media screen and (max-width: 600px) {
+    .fontSize70 {
+      font-size: 30px; } }
+
+.blue {
+  color: #7081ff; }
+
+.ball {
+  position: absolute; }
+  @media screen and (max-width: 1280px) {
+    .ball img {
+      width: 100px;
+      height: 100px; } }
+
+.healthy-life {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold; }
+  @media screen and (max-width: 600px) {
+    .healthy-life {
+      font-size: 15px; } }
+  .healthy-life-text {
+    float: right;
+    margin: 6px 20px;
+    text-align: left; }
+    @media screen and (max-width: 600px) {
+      .healthy-life-text {
+        margin: 3px 10px; } }
+  @media screen and (max-width: 600px) {
+    .healthy-life img {
+      width: 50px;
+      height: 50px; } }
+
+@keyframes nav {
+  0% {
+    width: 36px;
+    left: 0px;
+    top: 0px;
+    height: 36px; }
+  100% {
+    width: 50px;
+    left: -7px;
+    top: -7px;
+    height: 50px; } }
+input:focus {
+  resize: none;
+  outline: none; }
+
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 20px !important; } }
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
